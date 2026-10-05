@@ -1,0 +1,36 @@
+cd ~/vm-vs-container-performance
+cat > docs/vm-configuration.txt << EOF
+VM CONFIGURATION
+================
+Date recorded: $(date +%F)
+
+Host OS: Windows
+Hypervisor: VMware Workstation
+Guest OS: $(lsb_release -ds)
+Kernel: $(uname -r)
+
+CPU model: $(lscpu | grep 'Model name' | sed 's/Model name:[[:space:]]*//')
+vCPUs: $(nproc)
+Memory: $(free -h | awk '/Mem:/ {print $2}')
+Virtual disk: $(lsblk -d -o SIZE,TYPE | awk '$2=="disk" {print $1; exit}')
+
+Network mode: NAT
+
+DOCKER CONFIGURATION
+====================
+$(docker --version)
+Base image: ubuntu:24.04
+Image name: vm-container-benchmark
+CPU limit: none (Docker default)
+Memory limit: none (Docker default)
+Network mode: bridge (Docker default)
+
+BENCHMARK SETTINGS (Memory experiment)
+======================================
+Tool: sysbench
+Block size: 1M
+Total size: 10G
+Threads: 4
+Repetitions: 10 per environment
+EOF
+cat docs/vm-configuration.txt

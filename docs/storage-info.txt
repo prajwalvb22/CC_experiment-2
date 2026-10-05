@@ -1,0 +1,22 @@
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+fd0      2:0    1     4K  0 disk 
+loop0    7:0    0     4K  1 loop /snap/bare/5
+loop1    7:1    0  73.9M  1 loop /snap/core22/2045
+loop2    7:2    0 245.1M  1 loop /snap/firefox/6565
+loop3    7:3    0  66.8M  1 loop /snap/core24/2124
+loop4    7:4    0    74M  1 loop /snap/core22/2955
+loop5    7:5    0 261.4M  1 loop /snap/firefox/8969
+loop6    7:6    0  11.1M  1 loop /snap/firmware-updater/167
+loop7    7:7    0 615.3M  1 loop /snap/gnome-46-2404/168
+loop8    7:8    0   516M  1 loop /snap/gnome-42-2204/202
+loop9    7:9    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop10   7:10   0   402M  1 loop /snap/mesa-2404/1839
+loop11   7:11   0  10.8M  1 loop /snap/snap-store/1270
+loop12   7:12   0  49.3M  1 loop /snap/snapd/24792
+loop13   7:13   0   828K  1 loop /snap/snapd-desktop-integration/391
+loop14   7:14   0   576K  1 loop /snap/snapd-desktop-integration/315
+sda      8:0    0    60G  0 disk 
+├─sda1   8:1    0     1M  0 part 
+└─sda2   8:2    0    20G  0 part /
+sr0     11:0    1  95.3M  0 rom  /media/chaitra/CDROM
+sr1     11:1    1   5.9G  0 rom  /media/chaitra/Ubuntu 24.04.3 LTS amd64
